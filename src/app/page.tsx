@@ -10,11 +10,11 @@ export default function Home() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/message/new", {
+      const response = await fetch("http://206.189.187.157:3000/message/new", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          message: { content: message }, // Ensure this structure matches
+          message: { content: message }, 
         }),
       });
 
